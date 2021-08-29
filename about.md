@@ -4,4 +4,7 @@ title: About
 permalink: /about/
 ---
 
-Daily Record to be a Front-end Developer! 😎✨
+<center>Daily Record to be a Front-end Developer! 😎✨
+
+
+

@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Another minimal style of Jekyll theme for writers.
+프론트 개발자가 되기 위한 일상의 기록 😎

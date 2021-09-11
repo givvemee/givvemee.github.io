@@ -15,8 +15,6 @@ categories: javascript
 
 <br />
 
-<br />
-
 #### 자주 쓰이는 <span style="color: royalblue;">자바스크립트 내장 함수</span>
 
 사용자의 입력 값을 받는 함수  `prompt();`
@@ -26,8 +24,6 @@ categories: javascript
 브라우저에 출력 `documet.write();`
 
 콘솔에 출력 `console.log();`
-
-<br />
 
 <br />
 
@@ -46,8 +42,6 @@ categories: javascript
 
 <br />
 
-<br />
-
 #### 변수와 자료형, 연산자
 
 1. 변수를 선언하는 규칙 세 가지
@@ -55,8 +49,6 @@ categories: javascript
 2. 이름은 의미있게 짓는다.
 3. 여러 단어를 연결한 변수 이름은 Camel Case 로 만들어 준다.
 4. 선언할 수 없는 이름도 있다. 변수 이름의 첫 글자는 반드시 문자, 밑줄, 달러로 해야 함.
-
-<br />
 
 <br />
 
@@ -69,10 +61,6 @@ categories: javascript
 |    boolean    |            참과 거짓이라는 두 가지 값만 가진 유형            |                         True & False                         |
 |   undefined   | 지정하지 않는 것의 유형. 변수를 선언하고 값을 지정하지 않으면 undefined 가 됨 |                                                              |
 |     null      |                    값이 유효하지 않을 때                     |                                                              |
-
-<br />
-
-<br />
 
 <br />
 

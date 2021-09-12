@@ -1,3 +1,10 @@
+---
+layout: post
+Title: Javascript Study Note 04
+tags: [study]
+categories: javascript
+---
+
 ### 04
 
 ### (Javascript ) Study Note - 제어문, if else, for, while, break

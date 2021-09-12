@@ -1,6 +1,9 @@
-### 05
-
-### (Subjects) Study Note - Array, 객체, 배열 
+---
+layout: post
+Title: Javascript Study Note 05
+tags: [study]
+categories: javascript
+---
 
 #### Array 객체
 

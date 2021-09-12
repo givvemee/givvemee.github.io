@@ -1,6 +1,6 @@
 ---
 layout: post
-Title: Javascript Study Note 02
+Title: Javascript Study Note 03
 tags: [study]
 categories: javascript
 ---

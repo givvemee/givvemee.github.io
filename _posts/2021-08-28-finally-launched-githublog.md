@@ -2,6 +2,7 @@
 layout: post
 Title: my very first github blog post XD
 tags: [daily]
+categories: life
 ---
 
 ### 마침내 깃헙 블로그 만들었다! 

@@ -1,5 +1,5 @@
 ---
-=layout: post
+layout: post
 Title: 0918 드림코딩 by 엘리 (javascript study common work)
 tags: [study]
 categories: javascript
@@ -210,8 +210,122 @@ console.log(fooood.lastIndexOf('🍟'));
 
 <br />
 
+<br />
+
+###### 자바스크립트 10. JSON 개념 정리 와 활용방법 및 유용한 사이트 공유 JavaScript JSON <a href="https://youtu.be/FN_D4Ihs3LE">Link</a>
+
+Client 와 Web server 가 서로 통신하기 위해 만들어진 것이 HTTP _(HyperText Transfer Protocal)_
+
+AJAX 웹 페이지에서 동적으로 서버에게 데이터를 주고받을 수 있는 기술; 대표적으로 XHR이 있다. 
+
+요즘에 많이 쓰는 건 JSON _Javascript Object Notation_  : `{key: value}` 의 형식. 
+
+**JSON 은 브라우저 뿐만 아니라 모바일로도 서버와 데이터를 주고 받을 수 있고 또는 서버와 통신하지 않고도 Object 를 file 형식으로 저장가능 **
+
+- 데이터를 주고받을 때 쓰는 가장 간단한 파일 포맷
+- 텍스트를 기반으로 한 가벼움
+- 읽기 편함
+- key 와 value 로 이루어짐
+- **프로그램 언어에 상관 없이, 플랫폼에 상관 없이 JSON 변환 가능**
+
+
+
+JSON 의 공부방법;
+
+1. Object 를 어떻게 직렬화해서 JSON 으로 변환할지
+2. 직렬화된 JSON 을 어떻게 다시 Object 로 변환할 건지
+
+
+
+**Case 1. Object to JSON**
+
+`stringify` 를 사용. 
+
+```javascript
+// JSON.stringify 의 기본 문법
+let json = JSON.stringify(true);
+
+// Examples
+json = JSON.stringify(['apple','banana'])
+console.log(json);
+```
+
+![image](https://user-images.githubusercontent.com/89691274/133890956-7ec514ee-2448-451e-8445-aed42d7bee2a.png)
+
+콘솔로 출력하면 쌍따옴표가 나오는 것이 JSON 의 특징
+
+```javascript
+const rabbit = {
+    name: 'tori',
+    color: 'white',
+    size: null,
+    birthDate: new Date(),
+    jump: () => {
+        console.log(`${this.name} can jump!`);
+    }
+}
+json = JSON.stringify(rabbit);
+console.log(rabbit)
+```
+
+![image](https://user-images.githubusercontent.com/89691274/133890983-f3bcffc8-ec4b-41ff-935d-38e10b0d5b9f.png)
+
+오브젝트의 데이터가 아닌 함수는 rabbit 에 포함되지 않는다. 
+
+```javascript
+json = JSON.stringify(rabbit, ['name']);
+console.log(json)
+```
+
+JSON 에서는 내가 원하는 property 만 고르면 해당하는 것만 JSON 으로 변환도 가능하다. 
+
+![image](https://user-images.githubusercontent.com/89691274/133891055-2e547dab-c6b6-4ff0-a20f-14cf785d89d3.png)
+
+또한 JSON 에 key 와 value 값도 전달이 가능한데, 조금 더 세세하게 JSON 으로 바꾸고 싶다면 콜백함수 `return` 을 사용할 수도 있다.
+
+```javascript
+json = JSON.stringify(rabbit, (key, value) => {
+    console.log(`key: ${key}, value: ${value}`);
+    return key === 'name' ? 'ellie' : value;
+});
+console.log(json)
+```
+
+![image](https://user-images.githubusercontent.com/89691274/133891080-f27756ca-1965-4fd0-a99b-076147cf2160.png)
+
+
+
+**Case 2. JSON to Object**
+
+`parse` 를 사용. 
+
+```javascript
+// 기본 문법
+json = JSON.parse(rabbit);
+
+const obj = JSON.parse(json, (key, value) => {
+    console.log(`key: ${key}, value: ${value}`);
+    return key === 'birthDate' ? new Date(value) : 'value';
+});
+```
+
+stringify 로 string 으로 만들었던 JSON 을 다시 Object 로 가져올 때는 string 값이 잘 출력이 안 될 수 있으므로 콜백함수를 쓰면 좋다.
+
+즉, stringify > string > parse 상황에서는
+
+```javascript
+const obj = JSON.parse(json, (key, value) => {
+    console.log(`key: ${key}, value: ${value}`);
+    return value;
+});
+```
+
+아니 근데 JSON 너무 어렵다...... 진짜로. 나중에 다시 공부해야 할듯..... 
+
+<br />
+
 <br /><br />
 
 <br />
 
-__Noted at 2021. 09. 18__
+__Noted at 2021. 09. 17__

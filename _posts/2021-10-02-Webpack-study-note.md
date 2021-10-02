@@ -7,14 +7,14 @@ categories: webpack and
 
 ### (Webpack) Study Note
 
-<강의 내용>
+**강의 내용**
 
 - 프론트엔드 빌드 시스템 NPM, Webpack
 - 자바스크립트 모듈화 (AMD, Common.js, ES6)
 - 웹팩 주요 속성
 - 배포 환경에서 알고 있어야 할 웹팩 특징과 설정
 
-<새로 추가한 Vs code Plug-ins>
+**새로 추가한 Vs code Plug-ins**
 
 - 색 테마 : [Night Owl](https://marketplace.visualstudio.com/items?itemName=sdras.night-owl)
 - 파일 아이콘 테마 : [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
@@ -22,7 +22,7 @@ categories: webpack and
 - 실습 환경 보조 : [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - 기타 : [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager), [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag), [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens), [Atom Keymap](https://marketplace.visualstudio.com/items?itemName=ms-vscode.atom-keybindings), [Jetbrains IDE Keymap](https://marketplace.visualstudio.com/items?itemName=isudox.vscode-jetbrains-keybindings) 등
 
-<참고용 강의 교안>
+**참고용 강의 교안**
 
 **웹팩 핸드북** https://joshua1988.github.io/webpack-guide/guide.html
 

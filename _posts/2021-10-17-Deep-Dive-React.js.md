@@ -1020,7 +1020,7 @@ export default connect(
 
 이렇게 해도 작동은 잘 된다.... 대박.
 
-Todo 의 리덕스화는 내일 마저! 
+Todo 의 리덕스화는 스킵. 
 
 <br />
 

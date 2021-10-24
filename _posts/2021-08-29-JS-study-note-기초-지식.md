@@ -5,17 +5,15 @@ tags: [study]
 categories: javascript
 ---
 
-### 01
+### 자바스크립트 기초 지식 1
 
-### (Javascript) Study Note - Basic Knowledge 
-
-###### 공부하면서 정리했던 자바스크립트 기초 1
+###### 공부하면서 메모했던 자바스크립트 기초 정리 1
 
 <br />
 
 <br />
 
-#### 자주 쓰이는 <span style="color: royalblue;">자바스크립트 내장 함수</span>
+#### 자주 쓰이는 자바스크립트 내장 함수
 
 사용자의 입력 값을 받는 함수  `prompt();`
 
@@ -29,7 +27,7 @@ categories: javascript
 
 <br />
 
-#### <span style="color: royalblue;">자바스크립트 소스를 쓸 때 지켜야 할 규칙</span>
+#### 자바스크립트 소스를 쓸 때 지켜야 할 규칙
 
 1. 대소문자를 구별하여 작성
 2. 읽기 쉽게 들여쓰는 습관을 들인다
@@ -52,7 +50,7 @@ categories: javascript
 
 <br />
 
-#### <span style="color: royalblue;">Data Type 정리</span>
+#### Data Type 정리
 
 |   Data Type   |                          Definition                          |                          Additional                          |
 | :-----------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -65,8 +63,3 @@ categories: javascript
 <br />
 
 <br />
-
-<br />
-
-__Noted at 21.08.27__
-

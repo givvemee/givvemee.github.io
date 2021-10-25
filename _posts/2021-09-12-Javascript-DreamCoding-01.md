@@ -2,7 +2,7 @@
 =layout: post
 Title: 0912 드림코딩 by 엘리 (javascript study common work)
 tags: [study]
-categories: javascript
+categories: Javascript
 ---
 
 ### (Javascript) Dream Coding study note 01

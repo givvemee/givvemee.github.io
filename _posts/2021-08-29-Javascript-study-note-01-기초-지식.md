@@ -2,7 +2,7 @@
 layout: post
 Title: multiplication table with Javascript
 tags: [study]
-categories: javascript
+categories: Javascript
 ---
 
 ### 자바스크립트 기초 지식 1

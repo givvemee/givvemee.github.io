@@ -2,7 +2,7 @@
 layout: post
 Title: Javascript Study Note 04
 tags: [study]
-categories: javascript
+categories: Javascript
 ---
 
 ### 자바스크립트 기초 지식 4 제어문, if else, for, while, break

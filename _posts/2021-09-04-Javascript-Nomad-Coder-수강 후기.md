@@ -2,7 +2,7 @@
 layout: post
 Title: 노마드 코더 바닐라 JS로 크롬 앱 만들기
 tags: [breaktime]
-categories: javascript
+categories: Javascript
 ---
 
 ### Nomad Coder - 바닐라 JS 로 크롬 앱 만들기 수강 후기

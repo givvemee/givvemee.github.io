@@ -2,7 +2,7 @@
 layout: post
 Title: Javascript Study Note 05
 tags: [study]
-categories: javascript
+categories: Javascript
 ---
 
 ### 자바스크립트 기초 지식 5 Array

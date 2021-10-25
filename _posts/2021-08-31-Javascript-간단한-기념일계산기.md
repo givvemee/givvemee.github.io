@@ -2,7 +2,7 @@
 layout: post
 Title: multiplication table with Javascript
 tags: [study]
-categories: javascript
+categories: Javascript
 ---
 
 ### Javascript 로 기념일 계산기 만들기

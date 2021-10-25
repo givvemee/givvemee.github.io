@@ -5,9 +5,11 @@ tags: [study]
 categories: javascript
 ---
 
-### (Javascript) Dream Coding 01
+### (Javascript) Dream Coding study note 01
 
-###### 자바스크립트 2. 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향 <a href="https://www.youtube.com/watch?v=tJieVCgGzhs&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=3&ab_channel=%EB%93%9C%EB%A6%BC%EC%BD%94%EB%94%A9by%EC%97%98%EB%A6%AC">Link</a>
+<br/>
+
+#### <u>자바스크립트 2. 콘솔에 출력, script async 와 defer의 차이점 및 앞으로 자바스크립트 공부 방향</u> <a href="https://www.youtube.com/watch?v=tJieVCgGzhs&list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2&index=3&ab_channel=%EB%93%9C%EB%A6%BC%EC%BD%94%EB%94%A9by%EC%97%98%EB%A6%AC">Link</a>
 
 <br />
 
@@ -93,11 +95,7 @@ ECMAscript5 에 추가되어 있음.
 
 <br>
 
-<br>
-
-<br>
-
-###### 자바스크립트 3. 데이터타입, data types, let vs var, hoisting <a href="https://youtu.be/OCCpGh4ujb8">Link</a>
+#### <u>자바스크립트 3. 데이터타입, data types, let vs var, hoisting</u> <a href="https://youtu.be/OCCpGh4ujb8">Link</a>
 
 `프로그래밍에서 가장 중요한 것? 입력 - 연산 - 출력`; 콘솔이나 ui 에서 입력받은 데이터를 연산해서 알맞게 사용자에게 출력해 주는 것! 
 
@@ -143,11 +141,7 @@ _**var?** never use this!_
 
 <br>
 
-<br>
-
-<br>
-
-###### 자바스크립트 4. 코딩의 기본 operator, if, for loop 코드리뷰 팁 <a href="https://youtu.be/YBjufjBaxHo">Link</a>
+#### <u>자바스크립트 4. 코딩의 기본 operator, if, for loop 코드리뷰 팁</u> <a href="https://youtu.be/YBjufjBaxHo">Link</a>
 
 <br />
 
@@ -167,9 +161,9 @@ _**var?** never use this!_
 
 - **Comparison operators `비교 < <= > >=`**
 
-- **💥 Logical operators `논리 || (or) && (and) ! (not)`**
+- **💥 Logical operators `논리 | | (or) && (and) ! (not)`**
 
-  - <span style="color: darkred;">OR (||) 연산자</span>
+  - **OR (| |) 연산자**
 
   ``` javascript
   const value1 = false;
@@ -206,7 +200,7 @@ _**var?** never use this!_
 
   또한, 연산이 필요하다면 함수처럼 무거운 애들을 가장 뒤에다 배치함! 가벼운 것일수록 빠르게 연산될 수 있게.
 
-  - <span style="color: darkred;">AND (&&) 연산자</span>
+  - **AND (&&) 연산자**
 
   ```javascript
   const value1 = false;
@@ -215,7 +209,7 @@ _**var?** never use this!_
   // 하나라도 false 면? 게임 끝. false 로 반환 == 즉, 다 true 여야 true 값이 나옴.
   ```
 
-  - <span style="color: darkred;">NOT (!) 연산자</span>
+  - **NOT (!) 연산자**
 
     값을 반대로 바꿔줘버림
 
@@ -412,11 +406,7 @@ console.log(null === undefined);
 
 <br>
 
-<br>
-
-<br>
-
-###### 자바스크립트 5. Arrow Function은 무엇인가? 함수의 선언과 표현 <a href="https://youtu.be/e_lU39U-5bQ">Link</a>
+#### <u>자바스크립트 5. Arrow Function은 무엇인가? 함수의 선언과 표현</u> <a href="https://youtu.be/e_lU39U-5bQ">Link</a>
 
 **💥 Function**
 
@@ -608,3 +598,6 @@ const simplePrint = () => console.log('simplePrint');
 
 ```
 
+<br/>
+
+<br/>

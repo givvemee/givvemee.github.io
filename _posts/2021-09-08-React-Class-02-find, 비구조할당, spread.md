@@ -2,12 +2,10 @@
 layout: post
 Title: 0908 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### 02
-
-### (React.js) 0906 - 2nd Class
+### 오늘의 수업 : ES6 기본 문법 다지기 2
 
 ###### 21. 09. 08 (2/25)
 
@@ -21,7 +19,7 @@ categories: react.js
 
 <br />
 
-#### <span style="color: royalblue;">find</span>
+#### find
 
 find 함수의 형식은 filter 와 똑같다. 그러나 결괏값이 하나만 나옴.
 
@@ -46,7 +44,7 @@ console.log 의 결괏값
 
 <br />
 
-#### <span style="color: royalblue;">비구조할당 aka 구조 분해</span>
+#### 비구조할당 aka 구조 분해
 
 말 그대로 배열이나 객체의 구조를 분해하는 것. 이것 또한 react 에서 쓰이는 중요한 개념들.
 
@@ -83,11 +81,11 @@ console.log 의 결괏값
 
 <br />
 
-#### <span style="color: royalblue;">concat()과 함께 리액트에서 가장 중요한 spread 문법!</span>
+#### concat()과 함께 리액트에서 가장 중요한 spread 문법!
 
 전개연산자 라고도 함. 배열이나 객체 안에 있는 무언가를 복사하는 것.
 
-<span style="color: coral;">데이터를 추가하고, 복사하고 갱신까지 가능!</span>
+**데이터를 추가하고, 복사하고 갱신까지 가능!**
 
 기본 문법
 
@@ -110,15 +108,14 @@ console.log(arr4)
 
 객체나 배열 안에 무언가를 추가한다는 개념에서 Push() 와 헷갈릴 수 있는데, 
 
-<span style="color: coral;">push() 는 원본이 바뀌어도 될 때 사용. 그러나 원본이 바뀌면 안 되는 상황에서는 concat 이나 spread 를 사용할 것</span>
-
-<span style="color: coral;">concat() 은 데이터를 추가할 때,</span>
-
-<span style="color: coral;">spread [...] 은 추가도 하고 갱신도 할 때 사용.</span>
+> **push() 는 원본이 바뀌어도 될 때 사용. 그러나 원본이 바뀌면 안 되는 상황에서는 concat 이나 spread 를 사용할 것**
+>
+> **concat() 은 데이터를 추가할 때,**
+>
+> **spread [...] 은 추가도 하고 갱신도 할 때 사용.**
 
 ```react
 // examples
-
 const dog = {
     name: 'cutie',
     age: 3, 
@@ -252,10 +249,4 @@ ssr - next.js 와 backend 부분은 거의 안 다루시겠다고.... 저기까�
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 08__
 

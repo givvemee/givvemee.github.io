@@ -3,10 +3,10 @@
 layout: post
 Title: 0917 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 0917 - 5th Class
+### 오늘의 수업 : Hooks - useState
 
 ###### 21. 09. 17 (5/25)
 
@@ -14,7 +14,7 @@ categories: react.js
 
 <br />
 
-리액트 값ㅇ ㅣ 유동으로 변경할 때 useState 를 사용
+리액트 값이 유동으로 변경할 때 useState 를 사용
 
 js 변하는 값을 저장하는 저장공을 변수
 
@@ -304,10 +304,3 @@ export default Test5;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 17__
-

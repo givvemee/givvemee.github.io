@@ -5,9 +5,9 @@ tags: [study]
 categories: javascript
 ---
 
-### (Javascript) Dream Coding 03
+### (Javascript) Dream Coding study note 03
 
-###### 자바스크립트 8. 배열 제대로 알고 쓰자. 자바스크립트 배열 개념과 APIs 총정리 <a href="https://youtu.be/yOdAVDuHUKQ">Link</a>
+#### <u>자바스크립트 8. 배열 제대로 알고 쓰자. 자바스크립트 배열 개념과 APIs 총정리</u> <a href="https://youtu.be/yOdAVDuHUKQ">Link</a>
 
 <br />
 
@@ -55,7 +55,7 @@ console.log(fooood[2])
 
 **배열에서의 반복문 사용** _Looping_
 
-Case 1 <u>for</u>
+- Case 1 <u>for</u>
 
 ```javascript
 for (let i = 0; i < fooood.length; i++) {
@@ -63,7 +63,7 @@ for (let i = 0; i < fooood.length; i++) {
 }
 ```
 
-Case 2 <u>for ... of</u>
+- Case 2 <u>for ... of</u>
 
 ```javascript
 for (let foooods of fooood) {
@@ -77,7 +77,7 @@ for 를 쓰나 for ... of 를 쓰나 출력되는 값은 동일하다.
 
 
 
-Case 3 <u>forEach</u>
+- Case 3 <u>forEach</u>
 
 forEach() 는 콜백함수를 받아온다. 배열 안에 있는 value 마다 내가 정한 함수를 출력함.
 
@@ -212,7 +212,7 @@ console.log(fooood.lastIndexOf('🍟'));
 
 <br />
 
-###### 자바스크립트 10. JSON 개념 정리 와 활용방법 및 유용한 사이트 공유 JavaScript JSON <a href="https://youtu.be/FN_D4Ihs3LE">Link</a>
+#### <u>자바스크립트 10. JSON 개념 정리 와 활용방법 및 유용한 사이트 공유 JavaScript JSON</u> <a href="https://youtu.be/FN_D4Ihs3LE">Link</a>
 
 Client 와 Web server 가 서로 통신하기 위해 만들어진 것이 HTTP _(HyperText Transfer Protocal)_
 
@@ -324,8 +324,4 @@ const obj = JSON.parse(json, (key, value) => {
 
 <br />
 
-<br /><br />
-
 <br />
-
-__Noted at 2021. 09. 17__

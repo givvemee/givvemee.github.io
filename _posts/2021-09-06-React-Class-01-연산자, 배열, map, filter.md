@@ -2,12 +2,10 @@
 layout: post
 Title: 0906 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### 01
-
-### (React.js) 0906 - 1st Class
+### 오늘의 수업 : ES6 기본 문법 다지기 1
 
 ###### 21. 09. 06 (1/25)
 
@@ -32,13 +30,13 @@ categories: react.js
 
 <br />
 
-#### <span style="color: royalblue;">var 대신 자주 쓰일 예약어, let 과 const</span>
+#### var 대신 자주 쓰일 예약어, let 과 const
 
 React.js 에서는 ; (세미콜론) 이 필수가 아니므로, 본 수업 시간에는 대부분 ; 을 사용하지 않음. 
 
 let 과 const 에서 {} 중괄호 (scope) 가 주어지면 해당 영역에서만 그 영향을 발휘함.
 
-<span style="color: coral;">let 은 해당 값이 가변할 때, const 는 불변성의 특징을 가짐.</span>
+let 은 해당 값이 가변할 때, const 는 불변성의 특징을 가짐.
 
 ```react
 const a = 100
@@ -59,11 +57,11 @@ scope 안에서 선언된 함수는 그 안에서만 영향을 가짐.
 
 <br />
 
-#### <span style="color: royalblue;">템플릿 리터럴 template literal</span>
+#### 템플릿 리터럴 template literal
 
 새로운 문자열 표기법! 
 
-💥 <span style="color: coral;">`` (백틱) 과 ${변수}</span> 의 사용
+💥 **(백틱) 과 ${변수}** 의 사용
 
 ```react
 let a = 30
@@ -92,17 +90,17 @@ console.log 결괏값
 
 <br />
 
-#### <span style="color: royalblue;">연산자</span>
+#### 연산자
 
 💥 react.js 는 JSX 영역 <span style="color: lightgrey;">(추후에 배움)</span> 에 함수를 사용할 수 없다! 
 
-💥 JSX 영역에서 사용할 수 있는 건, <span style="color: coral;">삼항연산자, && 연산자, || 연산자</span>
+💥 JSX 영역에서 사용할 수 있는 건, 삼항연산자, && 연산자, || 연산자
 
-<span style="color: coral;">`삼항연산자` : </span> 조건 ? 참 : 거짓
+**`삼항연산자`** : 조건 ? 참 : 거짓
 
-<span style="color: coral;">`AND 연산자` : </span> 조건 && 조건의 참의 결과
+**`AND 연산자`** :  조건 && 조건의 참의 결과
 
-<span style="color: coral;">`OR 연산자` : </span> 조건 || 조건의 거짓의 결과, 결괏값을 찾을 수 없을 때.
+**`OR 연산자`** : 조건 | | 조건의 거짓의 결과, 결괏값을 찾을 수 없을 때.
 
 ```react
 let done1 = true 
@@ -141,7 +139,7 @@ console.log 의 결괏값
 
 <br />
 
-#### <span style="color: royalblue;">함수 표기법 : 화살표!</span>
+#### 함수 표기법 : 화살표!
 
 우린 여태 함수를 
 
@@ -182,7 +180,7 @@ make2(100, 200)
 
 <br />
 
-#### <span style="color: royalblue;">배열 </span>
+#### 배열 
 
 ```react
 const arr = [10, 20, 30, 40, 50]
@@ -197,7 +195,7 @@ console.log(arr)
 
 `push()` 는 원본 배열이 바뀐다. 
 
-<span style="color: coral;">불변성을 가진 배열, 원본을 유지한 채 카피본으로 작업하려면 `concat() 과 spread`연산자를 자주 쓴다!</span>
+**불변성을 가진 배열, 원본을 유지한 채 카피본으로 작업하려면 `concat() 과 spread`연산자를 자주 쓴다!**
 
 `concat()` 다수의 배열을 합치고 병합된 배열의 _사본을 반환_  **기존 배열은 건드리지 않음**
 
@@ -243,7 +241,7 @@ console.log 들의 결괏값
 
 <br />
 
-#### <span style="color: royalblue;">아주 중요하게 쓰이는 map()</span>
+#### **아주 중요하게 쓰이는 map()**
 
 일반적인 자바스크립트에서의 배열과 index 
 
@@ -286,7 +284,7 @@ console.log 결괏값
 
 **그러므로, JSX 영역의 리액트에서는 반복문에 해당하는 걸 처리하기 위해 map 을 사용함**
 
-<span style="color: coral;">map 의 기본 문법</span>
+**map 의 기본 문법**
 
 ```react
 arr.map((item, index) => {
@@ -326,11 +324,11 @@ console.log 의 결괏값
 
 <br />
 
-#### <span style="color: royalblue;">filter</span>
+#### filter
 
 map 함수와 마찬가지로 콜백함수를 인자로 받는데, 모든 원소를 한 번씩 훑으면서  true 요소들만 배열로 반환함!
 
-즉, <span style="color: coral;">filter 함수의 결과는 무조건 배열! </span>
+즉, **filter 함수의 결과는 무조건 배열!**
 
 ```react
 const arr = [10, 20, 30, 40]
@@ -354,10 +352,3 @@ console.log 의 결괏값
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 06__
-

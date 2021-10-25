@@ -2,12 +2,10 @@
 layout: post
 Title: 0915 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### 04
-
-### (React.js) 0915 - 4th Class
+### 오늘의 수업 : 컴포넌트와 props
 
 ###### 21. 09. 15 (4/25)
 
@@ -311,7 +309,7 @@ export default Test3;
 
 <br />
 
-#### <span style="color: royalblue">리액트에서 반복문으로 쓰이는 대박 중요한 map 함수</span>
+#### 리액트에서 반복문으로 쓰이는 대박 중요한 map 함수
 
 우선 수업 1회차 때 배운 map 을 다시 정리해 보자면, JSX 영역에선 for 처럼 반복문을 쓸 수가 없어서 map 이라는 함수로 대신하기로 했다. 
 
@@ -406,11 +404,7 @@ export default Test5;
 
 <br>
 
-이것을 활용한 예제로 
-
-![image-20210915225354316](C:\Users\gbthe\AppData\Roaming\Typora\typora-user-images\image-20210915225354316.png)
-
-이것과 같은 형식의 데이터를 만들어 보라고 하셨다. 
+이것을 활용한 예제로 간단한 것을 만들어 보자.
 
 먼저, 대충 객체 형식의 데이터를 짜 주었다.
 
@@ -501,10 +495,3 @@ const Test6 = () => {
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 16__
-

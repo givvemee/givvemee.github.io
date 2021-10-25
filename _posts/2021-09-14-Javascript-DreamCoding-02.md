@@ -5,9 +5,9 @@ tags: [study]
 categories: javascript
 ---
 
-### (Javascript) Dream Coding 02
+### (Javascript) Dream Coding study note 02
 
-###### 자바스크립트 7. 오브젝트 넌 뭐니? <a href="https://youtu.be/1Lbr29tzAA8">Link</a>
+#### <u>자바스크립트 7. 오브젝트 넌 뭐니?<u> <a href="https://youtu.be/1Lbr29tzAA8">Link</a>
 
 <br />
 
@@ -272,9 +272,4 @@ console.log(mixed.size);
 
 <br />
 
-<br />
-
-<br />
-
-__Noted at 2021. 09. 14__
-
+이 메일 ... 아직 답장 안 왔다.... 오늘은 10월 26일인데 ...

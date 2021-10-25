@@ -1,6 +1,6 @@
 ---
 layout: post
-title: github contribution problem
+Title: github contribution problem
 tags: [daily]
 categories: life
 title: 깃허브 기여도가 쌓이지 않는 걸 깨달은 사람...

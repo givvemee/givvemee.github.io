@@ -1,9 +1,10 @@
 ---
 layout: post
-Title: github contribution problem
+Title: 깃허브 기여도 인식 문제
 tags: [daily]
 categories: life
-title: 깃허브 기여도가 쌓이지 않는 걸 깨달은 사람...
+---
+
 ### 매일 Push 를 해도 기여도가 쌓이지 않은 사람이 있다?
 
 그건 바로 나야 나 ...

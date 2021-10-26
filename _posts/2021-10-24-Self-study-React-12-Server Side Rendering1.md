@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 12 Server side rendering 1 
+### React 독학 12 Server side rendering 1 
 
 **서버 사이드 렌더링이란?** UI 를 서버에서 렌더링 하는 것을 의미한다. 
 
@@ -761,9 +761,3 @@ app.listen(5000, () => {
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 24__

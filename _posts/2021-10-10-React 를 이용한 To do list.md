@@ -2,7 +2,7 @@
 layout: post
 Title: create react app todo list
 tags: [study]
-categories: react.js
+categories: React
 ---
 
 ### React.js 를 이용한 TodoList 만들기
@@ -339,12 +339,4 @@ export default Insert;
 <br/>
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 11__
-
-
 

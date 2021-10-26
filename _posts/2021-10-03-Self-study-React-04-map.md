@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 04
+### React 독학 4 컴포넌트 반복
 
 #### 컴포넌트 반복 
 
@@ -179,10 +179,3 @@ Todo List 는 모든 공부의 기본인데 ... 앞으로 몇 개 더 만들면�
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 03__
-

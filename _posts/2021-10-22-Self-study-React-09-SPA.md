@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 09 리액트 라우터로 SPA 개발하기
+### React 9 리액트 라우터로 SPA 개발하기
 
 **SPA란?**
 
@@ -680,9 +680,3 @@ export default Profiles;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 22__

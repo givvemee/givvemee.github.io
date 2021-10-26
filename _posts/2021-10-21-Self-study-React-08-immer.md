@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 09 immer 사용하여 불변성 유지하기 
+### React 독학 8 immer 사용하여 불변성 유지하기 
 
  <a href="https://givvemee.github.io/react.js/2021/10/21/Deep-Dive-React.js.html">컴포넌트 성능 최적화<a/> 에서 이어지는 공부이다!
 
@@ -300,9 +300,3 @@ export default App;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 21__

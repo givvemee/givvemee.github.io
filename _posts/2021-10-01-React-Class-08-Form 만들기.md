@@ -2,12 +2,10 @@
 layout: post
 Title: 1001 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 1001 - 8th Class
-
-###### 21. 10. 01 (8/25)  useState , props 를 이용한 Form 작성
+### 오늘의 수업 : useState , props 를 이용한 Form 작성
 
 시월의 첫 수업이었다니. 그리고 벌써 여덟번째라니...... 이제 1/3 왔는데 나의 이해도는 어디 쯤에 있을까? 이번 수업은 지난 시간에 했던 것들에 이어서 파일을 생성했다. 
 
@@ -222,10 +220,3 @@ export default SurveyStep4;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 01__
-

@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 07 Redux
+### React 독학 7 Redux
 
 11월 중순, 그러니까 지금 듣고 있는 국비 수업이 끝날 때까지는 리액트로 프로젝트 하나를 만들고 그 뒤에는 React Native 를 배워 보고 싶은데 가능할랑가! 
 
@@ -1025,10 +1025,3 @@ Todo 의 리덕스화는 스킵.
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 17__
-

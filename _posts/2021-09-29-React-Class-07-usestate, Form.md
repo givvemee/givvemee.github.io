@@ -2,10 +2,10 @@
 layout: post
 Title: 0929 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 0929 - 7th Class
+### 오늘의 수업 : useState 복습과 응용, 폼 작성 예제
 
 ###### 21. 09. 29 (7/25) `useState` 
 
@@ -390,12 +390,4 @@ export default Test4;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 29__
 

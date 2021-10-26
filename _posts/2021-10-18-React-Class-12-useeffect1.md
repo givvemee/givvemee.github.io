@@ -2,12 +2,10 @@
 layout: post
 Title: 1018 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 1018 - 12th Class
-
-###### 21. 10. 18 (12/25) useEffect 1
+### 오늘의 수업 : useEffect 1
 
 오늘은 지난 시간에 한 것을 간단히 정리하고 useEffect 를 배워 보았다. 지난 시간에 한 건 스킵하고 useEffect 만 정리해 보겠다.
 
@@ -374,12 +372,3 @@ useState 도 배우는 데 시간이 조금 걸렸는데 ... useEffect 는 더 �
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 18__
-
-
-

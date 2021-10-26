@@ -3,10 +3,11 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
+
 ---
 
-### Deep Dive React 12 Server side rendering 2
+### Deep Dive React 13 Server side rendering 2
 
 어제는 서버 사이드 렌더링의 기본 구조 작업을 마쳤다.
 
@@ -261,9 +262,3 @@ export default Menu;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 24__

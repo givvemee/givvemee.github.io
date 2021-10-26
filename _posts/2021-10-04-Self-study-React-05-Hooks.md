@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 05 - Hooks
+### React 독학 5 Hooks
 
 ####  **온갖 Hooks**
 
@@ -634,10 +634,3 @@ https://github.com/rehooks/awesome-react-hooks
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 04__
-

@@ -3,12 +3,12 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 01
+### React 독학 01 기초 지식
 
-###### 클래스형 컴포넌트
+#### 클래스형 컴포넌트
 
 컴포넌트를 선언하는 방식 중 하나. (함수 컴포넌트와 클래스 컴포넌트)
 
@@ -258,7 +258,7 @@ export default Counter;
 
 class Counter 바로 아랫부분의 constructor 에 집중해야 한다. 
 
-<span style="color: darkred;">클래스형 컴포넌트에서 constructor 를 작성할 때는 반드시 `super(props)` 를 호출해 주어야 한다. 이 함수가 호출이 되면 현재 클래스형 컴포넌트가 상속받고 있는 리액트의 Component 클래스가 지닌 생성자 함수를 호출해 준다. 또한, state 는 객체 형식이어야 한다. </span>
+**클래스형 컴포넌트에서 constructor 를 작성할 때는 반드시 `super(props)` 를 호출해 주어야 한다. 이 함수가 호출이 되면 현재 클래스형 컴포넌트가 상속받고 있는 리액트의 Component 클래스가 지닌 생성자 함수를 호출해 준다. 또한, state 는 객체 형식이어야 한다. **
 
 위처럼 constructor 메서드를 선언하지 않는 방법도 있기는 허다. 
 
@@ -284,10 +284,3 @@ render() {
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 25__
-

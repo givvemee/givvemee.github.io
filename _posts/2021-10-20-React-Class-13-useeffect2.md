@@ -2,12 +2,10 @@
 layout: post
 Title: 1020 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 1020 - 13th Class
-
-###### 21. 10. 20 (13/25) useEffect 2
+### 오늘의 수업 : useEffect 2
 
 오늘은 useEffect 의 두 번째 시간.
 
@@ -218,12 +216,4 @@ export default Timer;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 20__
-
-
 

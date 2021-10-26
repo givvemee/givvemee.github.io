@@ -2,12 +2,10 @@
 layout: post
 Title: 1015 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 1015 - 11th Class
-
-###### 21. 10. 15 (11/25) 
+### 오늘의 수업 : 비밀번호 검증과 리스트 데이터 추가, 제거, 초기화
 
 ![E3F5CB2C-787D-42BB-9BFC-5598E1ED2758_1_201_a](https://user-images.githubusercontent.com/89691274/137499994-91dd8d42-a19d-4ebd-b01b-049f61b46b65.jpeg)
 
@@ -287,12 +285,3 @@ export default FriendInput;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 15__
-
-
-

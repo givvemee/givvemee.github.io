@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 10 Context API
+### React 독학 10 Context API
 
 **Context API** ? 리액트 프로젝트에서 전역적으로 사용할 데이터가 있을 때 유용한 기술. 사용자의 로그인 정보, 앱 환경 설정, 테마 등.  
 
@@ -306,8 +306,3 @@ export default SelectColor;
 
 <br />
 
-<br />
-
-<br />
-
-__Noted at 2021. 10. 23__

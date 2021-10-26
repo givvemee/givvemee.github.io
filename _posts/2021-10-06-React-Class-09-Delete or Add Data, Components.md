@@ -2,12 +2,10 @@
 layout: post
 Title: 1006 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 1006 - 9th Class
-
-###### 21. 10. 06 (9/25) 삭제와 수정
+### 오늘의 수업 : 데이터의 삭제와 수정
 
 0906 부터 시작했으니 오늘이 수업한 지 딱 한 달 되는 날이네!? 
 
@@ -229,12 +227,3 @@ export default GalleryTest;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 06__
-
-
-

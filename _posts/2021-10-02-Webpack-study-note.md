@@ -2,10 +2,10 @@
 layout: post
 Title: Javascript Study Note 03
 tags: [study]
-categories: webpack and 
+categories: Webpack
 ---
 
-### (Webpack) Study Note
+### Self-study Webpack Study Note
 
 **강의 내용**
 
@@ -28,7 +28,7 @@ categories: webpack and
 
 <br/>
 
-#### <span style="color: royalblue">Node.js 와 NPM </span>
+#### Node.js 와 NPM
 
 웹팩을 사용하기 위해 Node.js 와 NPM 이 설치되어 있어야 한다.
 
@@ -84,7 +84,7 @@ devDependencies 는 개발을 할 때 개발용 보조 라이브러리들이 이
 
 <br/>
 
-#### <span style="color: royalblue">웹팩 맛보기</span>
+#### 웹팩 맛보기
 
 1. `npm init -y` 명령어를 통해 `package.json` 구성
 2. `npm i webpack web pack-cli -D` 를 통해 웹팩 관련 배포용 라이브러리 구성
@@ -178,7 +178,7 @@ module.exports = {
 - 웹 개발 작업 자동화 도구 Web Task manager 
 - 웹 애플리케이션의 빠른 로딩 속도와 높은 성능
 
-#### <span style="color: royalblue">웹팩으로 해결하려는 문제</span>
+#### **웹팩으로 해결하려는 문제**
 
 - 자바스크립트 변수 유효 범위
 
@@ -196,7 +196,7 @@ module.exports = {
 
 <br/>
 
-<span style="color: royalblue">Babel 과 ES6 Modules</span>
+**Babel 과 ES6 Modules**
 
 **바벨**은 자바스크립트의 최신 문법들을 최대한 많은 브라우저들에서 사용할 수 있도록 호환해 주는 도구이다. 
 
@@ -223,7 +223,7 @@ console.log(`10 + 20 = ${sum(10, 20)}`)
 
 <br/>
 
-#### <span style="color: royalblue;">웹팩의 주요 속성</span>
+#### 웹팩의 주요 속성
 
 - entry : 빌드를 할 대상 파일을 정의함
 - output : 웹팩으로 변환 후 (빌드 후) 결과물을 정의함
@@ -266,10 +266,4 @@ Output 의 파일 이름 옵션 참고 ==> <a href="https://joshua1988.github.io
 ###### <br/>
 
 <br/>
-
-<br/>
-
-<br/>
-
-__Noted at 2021. 10. 02__
 

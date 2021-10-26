@@ -3,10 +3,10 @@
 layout: post
 Title: 0927 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 0927 - 6th Class
+### 오늘의 수업 : Hooks - useState, useRef
 
 ###### 21. 09. 27 (6/25) useState , useRef
 
@@ -440,10 +440,3 @@ export default Test8;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 27__
-

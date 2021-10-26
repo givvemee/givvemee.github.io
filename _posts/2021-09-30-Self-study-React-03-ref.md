@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React 
 ---
 
-### Deep Dive React 03
+### React 독학 3 ref 와 DOM
 
 #### ref 와 DOM 
 
@@ -183,10 +183,3 @@ render(){
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 30__
-

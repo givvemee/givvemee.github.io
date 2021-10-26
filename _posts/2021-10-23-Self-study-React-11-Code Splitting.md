@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 11 Code Splitting
+### React 독학 10 Code Splitting
 
 리액트 프로젝트를 완성하여 사용자에게 제공할 때에는 빌드 작업을 거쳐야 한다. 빌드 작업을 통해 불필요한 주석, 경고, 공백 등을 제거하여 파일 크기도 최소화하고 브라우저에서 JSX 문법이나 다른 최신 자바스크립트 문법이 원활히 실행되도록 코드의 트랜스파일 작업도 할 수 있다. 이 작업은 `Webpack` 이 담당하게 된다. 웹팩에서 별도의 설정을 하지 않으면 프로젝트에서 사용 중인 모든 자바스크립트와 스타일 파일이 하나로 합쳐진다. 
 
@@ -251,13 +251,3 @@ export default App;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 23__

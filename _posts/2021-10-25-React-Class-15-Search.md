@@ -2,10 +2,10 @@
 layout: post
 Title: 1025 React.js Class
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### (React.js) 1025 - 15th Class
+### 오늘의 수업 : 검색 기능 예제
 
 ###### 21. 10. 25 (15/25) 간단 검색 기능 구현
 

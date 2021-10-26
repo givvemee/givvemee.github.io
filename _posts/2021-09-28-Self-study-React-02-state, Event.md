@@ -3,10 +3,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 02
+### React 독학 2 state, useState, Event Handling
 
 **state 를 constructor 에서 꺼내기**
 
@@ -710,10 +710,3 @@ export default Event1;
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 09. 28__
-

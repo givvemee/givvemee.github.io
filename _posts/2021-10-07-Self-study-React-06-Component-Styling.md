@@ -4,10 +4,10 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: react.js
+categories: React
 ---
 
-### Deep Dive React 06
+### React 독학 6 Component Styling
 
 나 요즘 리액트에 재미를 붙여가고 있는 게 분명하다...... 어려운 공부가 좀 재밌어졌다. 이해가 되면서부터 재밌어졌는데 아직 혼자 스스로 무언가를 만들어보고자 하면 잘 안 되기는 한다. 실패에 자꾸만 부딪히게 되면 흥미를 잃을 수도 있으니 열심히 해 봐야지. 
 
@@ -184,10 +184,3 @@ const Box = styled.div`
 <br />
 
 <br />
-
-<br />
-
-<br />
-
-__Noted at 2021. 10. 04__
-

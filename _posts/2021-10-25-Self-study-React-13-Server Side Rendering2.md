@@ -7,7 +7,7 @@ categories: React
 
 ---
 
-### Deep Dive React 13 Server side rendering 2
+### React 독학 13 Server side rendering 2
 
 어제는 서버 사이드 렌더링의 기본 구조 작업을 마쳤다.
 

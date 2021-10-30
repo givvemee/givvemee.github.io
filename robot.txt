@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://givvemee.github.io/sitemap.xml

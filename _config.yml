@@ -4,6 +4,7 @@ author: givvemee
 avatar: /logo.png
 email: givvemeee@gmail.com
 url: https://givvemee.github.io
+production_url: https://givvemee.github.io/
 
 plugins:
   - jekyll-seo-tag
@@ -11,7 +12,16 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
 
-paginate: 10
+paginate: 15
+owner:
+  name:           GIVEEMEE
+  bio:            Front-end Developer
+  email:          givvemeee@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter: https://twitter.com/gvms____
+  github: https://github.com/givvemee
+  linkedin: https://www.linkedin.com/in/givvemee-yoon-906758224/
+  instagram:
 
 # Uncomment the below line and set the tracking ID for enabling Google Analytics
 # 

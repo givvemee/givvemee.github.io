@@ -743,14 +743,6 @@ export const list = async ctx => {
 
 이 다음은 User 라는 데이터 모델을 만들어서 회원 인증 시스템을 구현해 볼 것이다!!
 
-
-
-
-
-
-
-
-
 <br />
 
 <br />

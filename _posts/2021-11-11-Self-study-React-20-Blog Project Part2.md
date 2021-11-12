@@ -975,6 +975,243 @@ const [LOGIN, LOGIN_SUCCESS, LOGIN_FAILURE] = createRequestActionTypes(
 
 이것은 내일 아침에 이어서. 
 
+```react
+// modules > auth.js
+import { createAction, handleActions } from "redux-actions";
+import produce from "immer";
+import createRequestSaga, { createRequestActionTypes } from "../lib/createRequestSaga";
+import {takeLatest} from 'redux-saga/effects'
+import * as authAPI from '../lib/api/auth'
+
+const CHANGE_FIELD = 'auth/CAHNGE_FIELD';
+const INITIALIZE_FORM = 'auth/INITIALIZE_FORM';
+
+const [REGISTER, REGISTER_SUCCESS, REGISTER_FAILURE] = createRequestActionTypes(
+    'auth/REGISTER'
+)
+const [LOGIN, LOGIN_SUCCESS, LOGIN_FAILURE] = createRequestActionTypes(
+    'auth/LOGIN'
+)
+
+export const changeField = createAction(
+    CHANGE_FIELD,
+    ({form, key, value}) => ({
+        form, // register, login
+        key, // username, name, password
+        value // 실제 바꾸려는 값
+    }),
+)
+
+export const initializeForm = createAction(INITIALIZE_FORM, form => form)
+
+export const register = createAction(REGISTER, ({username, password}) => ({
+    username, 
+    password
+}))
+export const login = createAction(LOGIN, ({username, password}) => ({
+    username, 
+    password
+}))
+
+// 사가 생성
+const registerSaga = createRequestSaga(REGISTER, authAPI.register)
+const loginSaga = createRequestSaga(LOGIN, authAPI.login)
+export function* authSaga() {
+    yield takeLatest (REGISTER, registerSaga)
+    yield takeLatest (LOGIN, loginSaga)
+}
+
+const initialState = {
+    register: {
+        username: '',
+        password: '',
+        passwordConfirm: ''
+    },
+    login: {
+        username: '',
+        password: ''
+    }
+}
+
+const auth = handleActions(
+    {
+        [CHANGE_FIELD]: (state, {payload: {form, key, value} }) => produce(state, draft => {
+            draft[form][key] = value; // ex) state.register.username 을 바꾼다
+        }),
+        [INITIALIZE_FORM]: (state, {payload: form}) => ({
+            ...state,
+            [form]: initialState[form],
+        }),
+        //회원 가입 성공
+        [REGISTER_SUCCESS]: (state, {payload: auth}) => ({
+            ...state,
+            authError: null,
+            auth,
+        }),
+        // 회원 가입 실패
+        [REGISTER_FAILURE]: (state, {payload: error}) => ({
+            ...state,
+            authError: error,
+        }),
+        // 로그인 성공
+        [LOGIN_SUCCESS]: (state, {payload: auth}) => ({
+            ...state,
+            authError: null,
+            auth,
+        }),
+        // 로그인 실패
+        [LOGIN_FAILURE]: (state, {payload: error}) => ({
+            ...state,
+            authError: error,
+        })
+    },
+    initialState
+)
+
+export default auth;
+```
+
+구현할 때 로딩에 관련된 상태는 이미 loading 리덕스 모듈에서 관리하므로, 성공했을 때와 실패했을 때의 상태에 대해서만 신경을 쓰면 된다. 리덕스 모듈을 작성했으면 프로젝트의 rootSaga 를 생성해 주어야 한다.
+
+```react
+// moduels > index.js
+import { combineReducers } from "redux";
+import auth, { authSaga } from "./auth";
+import loading from "./loading";
+import {all} from 'redux-saga/effects'
+
+const rootReducer = combineReducers({
+    auth,
+    loading
+})
+
+export function* rootSaga() {
+    yield all([authSaga()])
+}
+
+export default rootReducer;
+```
+
+그런 다음으로 스토어에 redux-saga 미들웨어를 적용해 준다.
+
+```react
+// src > index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+import { applyMiddleware, createStore } from 'redux';
+import rootReducer, { rootSaga } from './modules/index';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import { Provider } from 'react-redux';
+import createSagaMiddleware from 'redux-saga'
+
+const sagaMiddleware = createSagaMiddleware()
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(sagaMiddleware))
+)
+
+sagaMiddleware.run(rootSaga)
+
+ReactDOM.render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+  document.getElementById('root')
+);
+
+reportWebVitals();
+
+```
+
+여기까지만 회원가입 및 로그인 기능을 구현하는 데에 필요한 리덕스 관련 코드의 준비가 끝났다.
+
+<br/>
+
+**회원가입 구현**
+
+일단 오류는 나중에 처리할 것이라 코드부터 쭉 작성한다.
+
+```react
+// containers > auth > RegisterForm.js
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import AuthForm from '../../components/auth/AuthForm';
+import { changeField, initializeForm, register } from '../../modules/auth';
+
+const RegisterForm = () => {
+    const dispatch = useDispatch()
+    const {form, auth, authError} = useSelector(({auth}) => ({
+        form: auth.register,
+        auth: auth.auth,
+        authError: auth.authError
+    }))
+
+    // input event
+    const onChange = e => {
+        const {value, name} = e.target
+        dispatch(
+            changeField({
+                form: 'register',
+                key: name,
+                value
+            })
+        )
+    }
+
+    // form submit event
+    const onSubmit = e => {
+        e.preventDefault()
+        const {username, password, passwordConfirm} = form;
+        if (password !== passwordConfirm) {
+            // 오류처리
+            return;
+        }
+        dispatch(register({username, password}))
+    }
+
+    // 컴포넌트가 처음 렌더링 될 때 form 을 초기화함
+    useEffect(() => {
+        dispatch(initializeForm('register'))
+    }, [dispatch])
+
+    // 회원가입 성공과 실패 처리
+    useEffect(() => {
+        if (authError) {
+            console.log('오류 발생')
+            console.log(authError)
+            return ;
+        }
+        if (auth) {
+            console.log('회원가입 성공')
+            console.log(auth)
+        }
+    }, [auth, authError])
+
+    return (
+        <AuthForm type="register" form={form} onChange={onChange} onSubmit={onSubmit}/>
+    );
+};
+
+export default RegisterForm;
+```
+
+여기서는 onSubmit 이벤트가 발생했을 때 register 함수에 현재 username 과 password 를 파라미터로 넣어 액션을 디스패치해 주었다. 그리고 사가에서 API 요청을 처리하고, 이에 대한 결과는 auth/authError 를 통해 조회할 수 있다.
+
+또, 결과를 얻었을 때 특정 작업을 하기 위하여 useEffect 를 사용하였다. 여기에 넣어 준 값은 auth 와 authError 값 중에 무엇이 유효한지에 따라 다른 작업을 한다.
+
+이제 localhost:3000/register 에서 아무렇게나 정보를 넣고 가입 버튼을 눌러 보자. 그리고 개발자 도구에서 console.log 가 어떻게 찍히는지 확인을 해 보자.
+
+![image](https://user-images.githubusercontent.com/89691274/141481904-8cac0643-d390-4080-a4e4-408f84b40fca.png)
+
+후! 그리고 다시 한 번 더 누르면 콘솔에서 오류 발생도 확인할 수 있다. 흐흐 ....
+
 <br/>
 
 <br/>

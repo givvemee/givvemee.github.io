@@ -1206,7 +1206,7 @@ export default RegisterForm;
 
 또, 결과를 얻었을 때 특정 작업을 하기 위하여 useEffect 를 사용하였다. 여기에 넣어 준 값은 auth 와 authError 값 중에 무엇이 유효한지에 따라 다른 작업을 한다.
 
-이제 localhost:3000/register 에서 아무렇게나 정보를 넣고 가입 버튼을 눌러 보자. 그리고 개발자 도구에서 console.log 가 어떻게 찍히는지 확인을 해 보자.
+이제 localhost:3000/register 에서 아무렇게나 정보를 넣고 가입 버튼을 눌러 보자. 그리고 개발자 도구에서 console.log 가 어떻게 찍히는지 확인을 해 보자. 이게 잘 되지 않으면 blog-backend 서버가 실행되고 있는지 또한 확인을 해 보아야 한다.
 
 ![image](https://user-images.githubusercontent.com/89691274/141481904-8cac0643-d390-4080-a4e4-408f84b40fca.png)
 

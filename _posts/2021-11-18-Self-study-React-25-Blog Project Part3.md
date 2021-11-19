@@ -522,28 +522,6 @@ export default PostList;
 
 SubInfo 와 Tags 컴포넌트는 `PostViewer.js` 에 썼던 것과 같다. 그렇기에 common 디렉터리로 옮겨 불러오기 쉽게 작성해 줄 것이다.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<br/>
-
-
-
 <br/>
 
 <br/>

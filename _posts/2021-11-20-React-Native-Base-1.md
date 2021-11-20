@@ -3,7 +3,7 @@
 layout: post
 Title: 학원 수업과 병행한 독학 리액트 
 tags: [study]
-categories: React Native
+categories: React_Native
 
 ---
 

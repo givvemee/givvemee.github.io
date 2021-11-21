@@ -1,7 +1,7 @@
 ---
 
 layout: post
-Title: 학원 수업과 병행한 독학 리액트 
+Title: 독학 리액트 네이티브
 tags: [study]
 categories: React_Native
 
@@ -373,11 +373,10 @@ export default function App() {
     const {coords: {latitude, longitude}} = await Location.getCurrentPositionAsync({accuracy: 5})
     const location = await Location.reverseGeocodeAsync({latitude, longitude}, {useGoogleMaps: false})
     setRegion(location[0].region)
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat={latitude}&lon={longitude}&exclude=alerts&appid={apiKey}&units=metrics`)
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=alerts&appid=${apiKey}&units=metrics`)
     const json = await response.json()
-    console.log(json)
-    // console.log(json.daily)
-    // setDays(json.daily)
+    console.log(json.daily)
+    setDays(json.daily)
   }
   useEffect(() => {
     ask()
@@ -389,7 +388,7 @@ export default function App() {
         <Text style={styles.cityName}>{region}</Text>
       </View>
       <ScrollView pagingEnabled horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.weather} >
-        {/* {
+        {
           days.length === 0? (
           <View>
             <ActivityIndicator color='#aaa' size='large' style={styles.day}></ActivityIndicator>
@@ -399,10 +398,10 @@ export default function App() {
               <View key={index} style={styles.day}>
                 <Text style={styles.temp}>{parseFloat(day.temp.day).toFixed(1)}</Text>
                 <Text style={styles.desc}>{day.weather[0].main}</Text>
-                <Text style={styled.tinyText}>{day.weather[0].description}</Text>
+                <Text style={styles.tinyText}>{day.weather[0].description}</Text>
               </View>
             ))
-        } */}
+        }
       </ScrollView>
     </View>
   );
@@ -445,3 +444,4 @@ const styles = StyleSheet.create({
 ```
 
 여기까지 하면 앱이 잘 구동된다. 나는 중간에 weather API 가져오는 것이 너무나도 오래 걸렸음. 진짜.... 계속 401 에러 떴는데 이건 시간이 해결해 주는 거랬다. 엄청 오래 기다림.
+

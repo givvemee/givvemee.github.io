@@ -7,7 +7,7 @@ categories: Typescript
 
 ---
 
-### Studying Typescript by myself 1 
+### Studying Typescript by myself 2
 
 #### interface 란?
 
